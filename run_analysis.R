@@ -69,7 +69,7 @@ names(mergedlab2) <- gsub("\\)","", names(mergedlab2))
 inputtable <- mergedlab2[,c(2:69)] #Remove 'activityref' from table, for grouping
 grouped <- group_by(inputtable, activity, subject)
 tidy <- summarise_all(grouped, mean)
-write.table(tidy, file="./Data/Assignment_3.4_Data/Output/tidy.txt",sep="\t")
+write.table(tidy, file="./Data/Assignment_3.4_Data/Output/tidy.txt",row.name=FALSE)
 
 #Create list of variables from table for codebook
 variables2 <- names(tidy)

@@ -24,7 +24,7 @@ These signals were used to estimate variables of the feature vector for each pat
 
 ```{r echo=FALSE, results='asis'}
 library(knitr)
-variables1 <- read.csv("./Data/Assignment_3.4_Data/Variables.csv", header = TRUE)
+variables1 <- read.csv("C:/Users/Nikki/Documents/Data Science Specialization/Working Directory/Coursera/Data/Assignment_3.4_Data/Variables.csv",header = TRUE)
 kable(variables1, caption = "Variable types")
 ```
 
@@ -35,5 +35,6 @@ See full list of variables below:
 
 ```{r echo=FALSE, results='asis'}
 library(knitr)
+variables2 <- read.csv("C:/Users/Nikki/Documents/Data Science Specialization/Working Directory/Coursera/Data/Assignment_3.4_Data/Variables2.csv",header = TRUE)
 kable(variables2, caption = "Variables")
 ```
